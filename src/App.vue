@@ -276,8 +276,13 @@ export default {
       })
 
       try {
-        // Send to Anthropic Claude API (via proxy to avoid CORS)
-        const response = await axios.post('/api/v1/messages', {
+        // Determine API URL based on environment
+        const apiUrl = import.meta.env.DEV 
+          ? '/api/v1/messages' 
+          : 'https://api.anthropic.com/v1/messages'
+        
+        // Send to Anthropic Claude API
+        const response = await axios.post(apiUrl, {
           model: config.anthropicModel,
           max_tokens: config.maxTokens,
           messages: [
@@ -490,7 +495,12 @@ export default {
       }
 
       try {
-        const response = await axios.post('/api/v1/messages', {
+        // Determine API URL based on environment
+        const apiUrl = import.meta.env.DEV 
+          ? '/api/v1/messages' 
+          : 'https://api.anthropic.com/v1/messages'
+        
+        const response = await axios.post(apiUrl, {
           model: config.anthropicModel,
           max_tokens: 10,
           messages: [
