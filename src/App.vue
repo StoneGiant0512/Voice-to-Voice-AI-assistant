@@ -441,6 +441,19 @@ export default {
     }
 
     const saveApiKey = () => {
+      // If using environment key, just close the modal
+      if (isUsingEnvKey.value) {
+        apiKeyStatus.value = {
+          type: 'success',
+          message: 'Configuration saved successfully!'
+        }
+        setTimeout(() => {
+          apiKeyStatus.value = null
+          showSettings.value = false
+        }, 1000)
+        return
+      }
+      
       if (!apiKey.value.trim()) {
         apiKeyStatus.value = {
           type: 'error',
@@ -452,13 +465,14 @@ export default {
       localStorage.setItem('anthropic-api-key', apiKey.value)
       apiKeyStatus.value = {
         type: 'success',
-        message: 'API key saved successfully!'
+        message: 'Configuration saved successfully!'
       }
       
-      // Clear status after 3 seconds
+      // Close settings modal after a short delay
       setTimeout(() => {
         apiKeyStatus.value = null
-      }, 3000)
+        showSettings.value = false
+      }, 500)
     }
 
     const testApiConnection = async () => {
