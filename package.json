@@ -1,0 +1,38 @@
+{
+  "name": "sentivue",
+  "version": "1.0.0",
+  "description": "Voice-to-Voice AI Assistant Platform with Multi-Language Support",
+  "main": "index.js",
+  "keywords": [
+    "vue",
+    "ai",
+    "voice",
+    "speech-recognition",
+    "text-to-speech",
+    "anthropic",
+    "claude",
+    "multilingual"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/sentivue.git"
+  },
+  "homepage": "https://yourusername.github.io/sentivue",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "vue": "^3.3.4",
+    "axios": "^1.5.0",
+    "@vueuse/core": "^10.4.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.3.4",
+    "vite": "^4.4.9"
+  }
+}
