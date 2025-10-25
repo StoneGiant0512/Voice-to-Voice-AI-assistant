@@ -32,16 +32,10 @@ export const config = {
   
   // Language Configuration
   languages: {
-    'ar-SA': { name: 'Modern Standard Arabic', flag: '🇸🇦', code: 'ar-SA' },
     'en-US': { name: 'English', flag: '🇺🇸', code: 'en-US' },
-    'zh-CN': { name: 'Mandarin Chinese', flag: '🇨🇳', code: 'zh-CN' },
-    'hi-IN': { name: 'Hindi', flag: '🇮🇳', code: 'hi-IN' },
     'es-ES': { name: 'Spanish', flag: '🇪🇸', code: 'es-ES' },
     'fr-FR': { name: 'French', flag: '🇫🇷', code: 'fr-FR' },
-    'bn-BD': { name: 'Bengali', flag: '🇧🇩', code: 'bn-BD' },
-    'pt-BR': { name: 'Portuguese', flag: '🇧🇷', code: 'pt-BR' },
-    'ru-RU': { name: 'Russian', flag: '🇷🇺', code: 'ru-RU' },
-    'ur-PK': { name: 'Urdu', flag: '🇵🇰', code: 'ur-PK' }
+    'pt-BR': { name: 'Portuguese', flag: '🇧🇷', code: 'pt-BR' }
   },
   defaultLanguage: 'en-US'
 }

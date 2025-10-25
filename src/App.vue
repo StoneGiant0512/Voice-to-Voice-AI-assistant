@@ -217,7 +217,9 @@ export default {
         recognition = new SpeechRecognition()
         recognition.continuous = false
         recognition.interimResults = false
+        
         recognition.lang = selectedLanguage.value
+        console.log('Speech recognition language set to:', selectedLanguage.value)
 
         recognition.onstart = () => {
           isRecording.value = true
@@ -406,7 +408,15 @@ export default {
     }
 
     const testVoice = () => {
-      const testText = "Hello! This is a test of the selected voice. How does it sound?"
+      // Get test message in the selected language
+      const testMessages = {
+        'en-US': 'Hello! This is a test of the selected voice. How does it sound?',
+        'es-ES': '¡Hola! Esta es una prueba de la voz seleccionada. ¿Cómo suena?',
+        'fr-FR': 'Bonjour! Ceci est un test de la voix sélectionnée. Comment ça sonne?',
+        'pt-BR': 'Olá! Este é um teste da voz selecionada. Como soa?'
+      }
+      
+      const testText = testMessages[selectedLanguage.value] || testMessages['en-US']
       speakText(testText)
     }
 
@@ -416,6 +426,7 @@ export default {
       // Update speech recognition language
       if (recognition) {
         recognition.lang = selectedLanguage.value
+        console.log('Updated speech recognition language to:', selectedLanguage.value)
       }
       
       apiKeyStatus.value = {
