@@ -18,7 +18,7 @@ A modern voice-to-voice AI assistant platform built with Vue.js. Users can speak
 - 📱 **Responsive**: Works on desktop and mobile devices
 
 ## Live Demo
-https://voice-to-voice-ai-assistant-git-main-stonegiant0512s-projects.vercel.app/
+https://voice-to-voice-ai-assistant.vercel.app/
 
 ## 🚀 Quick Start
 
