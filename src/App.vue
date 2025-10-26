@@ -254,7 +254,7 @@ export default {
       if (isProcessing.value) return
 
       if (!apiKey.value) {
-        error.value = 'Please enter your OpenAI API key first'
+        error.value = 'Please enter your Anthropic API key first'
         return
       }
 

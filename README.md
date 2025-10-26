@@ -12,7 +12,7 @@ A modern voice-to-voice AI assistant platform built with Vue.js. Users can speak
 - 🧠 **AI Processing**: Send your speech to Anthropic's Claude models for intelligent responses
 - 🔊 **Voice Output**: Convert AI responses back to speech using text-to-speech
 - 💬 **Conversation History**: See your conversation with the AI in real-time
-- 🌍 **Multi-Language Support**: 10 languages including Arabic, English, Chinese, Hindi, Spanish, French, Bengali, Portuguese, Russian, and Urdu
+- 🌍 **Multi-Language Support**: 10 languages including English, Spanish, French, and Portuguese
 - 👥 **Voice Selection**: Choose between male and female AI voices
 - 🔐 **Secure**: API keys stored locally, never sent to our servers
 - 📱 **Responsive**: Works on desktop and mobile devices
