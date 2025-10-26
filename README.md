@@ -25,7 +25,7 @@ https://voice-to-voice-ai-assistant.vercel.app/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/sentivue.git
+git clone https://github.com/StoneGiant0512/Voice-to-Voice-AI-assistant
 cd sentivue
 ```
 
